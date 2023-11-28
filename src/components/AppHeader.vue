@@ -37,7 +37,7 @@ export default {
     </header>
 </template>
 
-<style>
+<style scoped>
 nav a {
     margin: 0 1rem;
 }
