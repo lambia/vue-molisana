@@ -1,28 +1,7 @@
 <script>
 export default {
     name: "AppHeader",
-    data() {
-        return {
-            menuLinks: [
-                {
-                    text: "Home",
-                    url: "#home",
-                },
-                {
-                    text: "Prodotti",
-                    url: "#prodotti",
-                },
-                {
-                    text: "Chi Siamo",
-                    url: "#chisiamo",
-                },
-                {
-                    text: "Contatti",
-                    url: "#contatti",
-                },
-            ]
-        }
-    },
+    props: ["links"],
     mounted() {
         console.log("Componente AppHeader caricato");
     }
@@ -32,7 +11,7 @@ export default {
 <template>
     <header>
         <nav>
-            <a v-for="link in menuLinks" :href="link.url">{{ link.text }}</a>
+            <a v-for="link in links" :href="link.url">{{ link.text }}</a>
         </nav>
     </header>
 </template>
