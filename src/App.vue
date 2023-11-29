@@ -115,6 +115,8 @@ export default {
 <template>
 	<AppHeader :links="menuLinks" />
 	<main>
+		<!-- Esempio di utilizzo font-awesome -->
+		<!-- <font-awesome-icon icon="fa-solid fa-home" class="coloreRosso" /> -->
 		<AppJumbo />
 		<AppProdotti :products="pastaLunga" titolo="La nostra pasta lunga" />
 		<AppProdotti :products="pastaCorta" titolo="La nostra pasta corta" />
@@ -122,4 +124,8 @@ export default {
 	<AppFooter />
 </template>
 
-<style scoped></style>
+<style scoped>
+.coloreRosso {
+	color: red;
+}
+</style>
